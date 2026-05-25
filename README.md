@@ -1,6 +1,6 @@
-# React Frontend Application
+# Book Shelf Pro 
 
-A modern and scalable React frontend application built using industry-standard tools and best practices. This project focuses on clean architecture, reusable components, responsive UI, efficient API handling, and optimized user experience.
+Modern React frontend setup using React Router DOM for routing, React Query for API caching and server-state management, Axios for HTTP requests, React Hook Form + Zod for scalable validation, Lucide React for icons, and Sonner for toast notifications. Built for scalable, fast, and production-ready web applications.
 
 ---
 
