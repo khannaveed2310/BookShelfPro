@@ -1,16 +1,261 @@
-# React + Vite
+# React Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and scalable React frontend application built using industry-standard tools and best practices. This project focuses on clean architecture, reusable components, responsive UI, efficient API handling, and optimized user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
 
-## React Compiler
+- React.js
+- React Router DOM
+- TanStack React Query
+- Axios
+- React Hook Form
+- Zod Validation
+- Tailwind CSS
+- Lucide React Icons
+- Sonner Toast Notifications
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Modern responsive UI
+- Client-side routing
+- API integration with Axios
+- Server state management using React Query
+- Form handling and validation
+- Reusable component architecture
+- Toast notifications for user feedback
+- Scalable folder structure
+- Clean and maintainable codebase
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+├── components/
+├── pages/
+├── routes/
+├── hooks/
+├── api/
+├── schemas/
+├── utils/
+├── providers/
+└── assets/
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone # React Frontend Application
+
+A modern and scalable React frontend application built using industry-standard tools and best practices. This project focuses on clean architecture, reusable components, responsive UI, efficient API handling, and optimized user experience.
+
+---
+
+## 🚀 Tech Stack
+
+- React.js
+- React Router DOM
+- TanStack React Query
+- Axios
+- React Hook Form
+- Zod Validation
+- Tailwind CSS
+- Lucide React Icons
+- Sonner Toast Notifications
+
+---
+
+## ✨ Features
+
+- Modern responsive UI
+- Client-side routing
+- API integration with Axios
+- Server state management using React Query
+- Form handling and validation
+- Reusable component architecture
+- Toast notifications for user feedback
+- Scalable folder structure
+- Clean and maintainable codebase
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+├── components/
+├── pages/
+├── routes/
+├── hooks/
+├── api/
+├── schemas/
+├── utils/
+├── providers/
+└── assets/
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/khannaveed2310/BookShelfPro.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd BookShelfPro
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Running the Project
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+VITE_API_BASE_URL=your_api_url
+```
+
+---
+
+## 📦 Dependencies
+
+```bash
+npm install react-router-dom @tanstack/react-query axios react-hook-form @hookform/resolvers zod lucide-react sonner
+```
+
+---
+
+## 🎯 Project Goals
+
+- Build scalable frontend architecture
+- Improve maintainability and performance
+- Follow modern React development practices
+- Deliver clean and user-friendly UI/UX
+
+---
+
+## 📄 License
+
+This project is for educational and assignment purposes.
+
+---
+
+## 👨‍💻 Author
+
+Developed by Naveed
+```
+
+Navigate to the project folder:
+
+```bash
+cd your-repo-name
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Running the Project
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+VITE_API_BASE_URL=your_api_url
+```
+
+---
+
+## 📦 Dependencies
+
+```bash
+npm install react-router-dom @tanstack/react-query axios react-hook-form @hookform/resolvers zod lucide-react sonner
+```
+
+---
+
+## 🎯 Project Goals
+
+- Build scalable frontend architecture
+- Improve maintainability and performance
+- Follow modern React development practices
+- Deliver clean and user-friendly UI/UX
+
+---
+
+## 📄 License
+
+This project is for educational and assignment purposes.
+
+---
+
+## 👨‍💻 Author
+
+Developed by Naveed
