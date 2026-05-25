@@ -14,9 +14,9 @@ function StatCard({ icon: Icon, label, value, color, sub }) {
         <p className="text-2xl font-bold text-surface-900 dark:text-surface-50 font-display">
           {value}
         </p>
-        <p className="text-xs text-surface-500 dark:text-surface-400 mt-0.5">{label}</p>
+        <p className="text-sm text-surface-500 dark:text-surface-400 mt-0.5">{label}</p>
         {sub && (
-          <p className="text-xs text-brand-500 dark:text-brand-400 mt-1 font-medium">{sub}</p>
+          <p className="text-sm text-brand-500 dark:text-brand-400 mt-1 font-medium">{sub}</p>
         )}
       </div>
     </div>
@@ -55,7 +55,7 @@ export default function DashboardPage({ onAddBook }) {
           <h1 className="text-2xl font-bold text-surface-900 dark:text-surface-50 font-display">
             Dashboard
           </h1>
-          <p className="text-sm text-surface-400 dark:text-surface-500 mt-0.5">
+          <p className="text-md text-surface-400 dark:text-surface-500 mt-0.5">
             Your reading collection at a glance
           </p>
         </div>
@@ -108,13 +108,13 @@ export default function DashboardPage({ onAddBook }) {
         {/* Recent books */}
         <div className="card lg:col-span-3 p-5">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-sm font-semibold text-surface-900 dark:text-surface-50 font-display flex items-center gap-2">
+            <h2 className="text-lg font-semibold text-surface-900 dark:text-surface-50 font-display flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-brand-500" />
               Recent Additions
             </h2>
             <Link
               to="/books"
-              className="text-xs text-brand-600 dark:text-brand-400 hover:underline font-medium"
+              className="text-md text-brand-600 dark:text-brand-400 hover:underline font-medium"
             >
               View all →
             </Link>
@@ -133,7 +133,7 @@ export default function DashboardPage({ onAddBook }) {
                   key={book.id}
                   className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-50 dark:hover:bg-surface-800 transition"
                 >
-                  <div className="w-9 h-12 rounded-lg overflow-hidden bg-surface-100 dark:bg-surface-800 flex-shrink-0">
+                  <div className="w-12 h-14 rounded-lg overflow-hidden bg-surface-100 dark:bg-surface-800 flex-shrink-0">
                     {book.coverImage ? (
                       <img
                         src={book.coverImage}
@@ -148,15 +148,15 @@ export default function DashboardPage({ onAddBook }) {
                     )}
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="text-sm font-medium text-surface-900 dark:text-surface-50 truncate">
+                    <p className="text-md font-medium text-surface-900 dark:text-surface-50 truncate">
                       {book.title}
                     </p>
-                    <p className="text-xs text-surface-400 dark:text-surface-500 truncate">
+                    <p className="text-sm text-surface-400 dark:text-surface-500 truncate">
                       {book.author} · {book.publicationYear}
                     </p>
                   </div>
                   <span
-                    className={`badge text-[10px] hidden sm:inline-flex ${getGenreColor(book.genre)}`}
+                    className={`badge text-[15px] hidden sm:inline-flex ${getGenreColor(book.genre)}`}
                   >
                     {book.genre}
                   </span>
@@ -165,7 +165,7 @@ export default function DashboardPage({ onAddBook }) {
             </div>
           ) : (
             <div className="py-10 text-center">
-              <p className="text-sm text-surface-400">
+              <p className="text-md text-surface-400">
                 No books yet.{" "}
                 <button
                   onClick={onAddBook}
@@ -180,7 +180,7 @@ export default function DashboardPage({ onAddBook }) {
 
         {/* Genre breakdown */}
         <div className="card lg:col-span-2 p-5">
-          <h2 className="text-sm font-semibold text-surface-900 dark:text-surface-50 font-display flex items-center gap-2 mb-4">
+          <h2 className="text-lg font-semibold text-surface-900 dark:text-surface-50 font-display flex items-center gap-2 mb-4">
             <Star className="w-4 h-4 text-amber-500" />
             Genre Breakdown
           </h2>
@@ -198,7 +198,7 @@ export default function DashboardPage({ onAddBook }) {
                 .slice(0, 8)
                 .map(([genre, count]) => (
                   <div key={genre}>
-                    <div className="flex justify-between text-xs mb-1">
+                    <div className="flex justify-between text-lg mb-1">
                       <span className="text-surface-700 dark:text-surface-300 font-medium">
                         {genre}
                       </span>

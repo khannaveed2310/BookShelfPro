@@ -5,7 +5,7 @@ export default function Navbar({ onMenuClick, search, onSearchChange, onAddBook 
   const { isDark, toggle } = useDarkMode();
 
   return (
-    <header className="sticky top-0 z-20 h-16 flex items-center gap-4 px-4 lg:px-6 bg-white/80 dark:bg-surface-900/80 backdrop-blur-md border-b border-surface-200 dark:border-surface-800">
+    <header className="sticky top-0 z-20 h-20 flex items-center gap-4 px-4 lg:px-6 bg-white/80 dark:bg-surface-900/80 backdrop-blur-md border-b border-surface-200 dark:border-surface-800">
       {/* Hamburger – mobile only */}
       <button
         onClick={onMenuClick}
@@ -31,27 +31,13 @@ export default function Navbar({ onMenuClick, search, onSearchChange, onAddBook 
       </div>
 
       <div className="ml-auto flex items-center gap-2">
-        {/* Add Book – desktop */}
-        <button onClick={onAddBook} className="btn-primary hidden sm:inline-flex">
-          <Plus className="w-4 h-4" />
-          Add Book
-        </button>
-
-        {/* Add Book – mobile icon only */}
-        <button
-          onClick={onAddBook}
-          className="sm:hidden p-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 transition"
-        >
-          <Plus className="w-5 h-5" />
-        </button>
-
         {/* Dark mode toggle */}
         <button
           onClick={toggle}
           className="p-2 rounded-xl hover:bg-surface-100 dark:hover:bg-surface-800 text-surface-500 dark:text-surface-400 transition"
           title={isDark ? "Switch to light mode" : "Switch to dark mode"}
         >
-          {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          {isDark ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
         </button>
 
         {/* User avatar */}

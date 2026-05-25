@@ -34,10 +34,10 @@ export default function Sidebar({ open, onClose }) {
               <BookMarked className="w-4 h-4 text-white" />
             </div>
             <div>
-              <p className="text-sm font-bold text-surface-900 dark:text-white font-display tracking-tight">
+              <p className="text-md font-bold text-surface-900 dark:text-white font-display tracking-tight">
                 Bookshelf
               </p>
-              <p className="text-[10px] text-surface-400 dark:text-surface-500 uppercase tracking-widest font-mono">
+              <p className="text-xs text-surface-400 dark:text-surface-500 uppercase tracking-widest font-mono">
                 Pro
               </p>
             </div>
